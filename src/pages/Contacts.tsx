@@ -14,7 +14,6 @@ import { IContact } from "../interfaces/contact";
 import dataStore from "../store/data";
 import infoStore from "../store/info";
 import userStore from "../store/user";
-import Info from "../components/Info";
 import CustomModal from "../components/modals/CustomModal";
 import SortPanel from "../components/SortPanel";
 import Contact from "../components/Contact";
@@ -136,7 +135,6 @@ const Contacts: React.FC = () => {
       </Grid>
 
       <CustomModal open={open} setOpen={setOpen} modalName={modalName} />
-      <Info />
     </Box>
   );
 };

@@ -1,12 +1,9 @@
 import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 import { observer } from "mobx-react-lite";
-import React from "react";
 import { useCallback } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { login } from "../api/authApi";
 import { IModalAuth } from "../interfaces/modals";
-import Info from "../components/Info";
-import { useNavigate } from "react-router-dom";
 const Auth = () => {
   const { register, handleSubmit, watch, control, reset } =
     useForm<IModalAuth>();
@@ -48,7 +45,6 @@ const Auth = () => {
           </Button>
         </Box>
       </form>
-      <Info />
     </Grid>
   );
 };

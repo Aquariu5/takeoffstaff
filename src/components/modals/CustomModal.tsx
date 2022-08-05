@@ -1,24 +1,19 @@
-import { ErrorRounded } from "@mui/icons-material";
 import {
   Button,
-  Checkbox,
   Dialog,
   DialogActions,
   DialogContent,
   DialogTitle,
-  Grid,
   TextField,
-  Typography,
 } from "@mui/material";
 import { observer } from "mobx-react-lite";
 import * as React from "react";
-import { useCallback, useEffect, useState } from "react";
-import { Controller, SubmitHandler, useForm } from "react-hook-form";
+import { useCallback, useEffect } from "react";
+import { SubmitHandler, useForm } from "react-hook-form";
 
 import { addRow, editRow } from "../../api/dataApi";
 import { IModalData } from "../../interfaces/modals";
 import dataStore from "../../store/data";
-import userStore from "../../store/user";
 interface ModalProps {
   open: boolean;
   setOpen: Function;
