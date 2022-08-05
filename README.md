@@ -1,2 +1,3 @@
 # takeoffstaff
-TakeOffStaff test
+Запуск:
+npm start
